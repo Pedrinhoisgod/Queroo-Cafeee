@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main{
+    public static double[] readArray(int n){
+        Scanner sc = new Scanner(System.in);
+        double[] array = new double[n];
+        for(int i = 0; i < array.length; i++){
+            array[i] = sc.nextDouble();
+        }
+        return array;
+    }
+    public static void main(String[] args){
+        double n[] = readArray(101);
+        for(int i = 0; i<101; i++){
+            if(n[i]<=10)
+                System.out.printf("A[%d] = %.1f\n", i, n[i]);
+        }
+    }
+}
